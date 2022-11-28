@@ -1,2 +1,2 @@
 # Market-Place-for-Engineering-Notes-TextBook
- Purchase and Sell the Books
+Provide user interactivity platform where he can easily search Purchase and Sell the Books.
