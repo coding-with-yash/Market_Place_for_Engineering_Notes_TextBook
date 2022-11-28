@@ -1,0 +1,1138 @@
+/* common css */
+/* ====================== */
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+a,
+a:hover,
+a:focus{
+    text-decoration: none;
+    outline: none;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* logo css */
+/* =================== */
+
+.logo{
+    color: #000;
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: capitalize;
+    text-align: center;
+    display: inline-block;
+    margin: 0 0 20px;
+}
+
+
+/* admin login form css */
+/* ==================================== */
+
+.login-form{
+    background: linear-gradient(30deg,#e9e9e9 49%, #e4e4e4 50%);
+    box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
+    border-radius: 50px;
+    padding: 50px 40px;
+    margin: 100px 0 0;
+    text-align: center;
+}
+
+.login-form .form-group{
+    text-align: left;
+}
+.login-form label{
+    width: 25%;
+    display: inline-block;
+}
+.login-form .form-control{
+    width: 74%;
+    display: inline-block;
+    border: none;
+    padding: 15px 15px;
+    height: 50px;
+    border-radius: 20px;
+}
+.login-form .form-control:focus{
+    border: none;
+    box-shadow: 3px 3px 5px #999;
+}
+.login-form .form-control::placeholder{
+    color: #999;
+    text-transform: capitalize;
+}
+
+.login-form .btn{
+    padding: 7px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #e93700;
+    transition: all 0.3s;
+}
+
+.login-form .btn:hover,
+.login-form .btn:focus{
+    background-color: #333;
+}
+
+/* admin header css */
+/* ========================= */
+
+#admin-header{
+    background: linear-gradient(to bottom, #e7e7e7, #f5f5f5);
+    padding: 15px 0 12px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.15);
+    position: relative;
+    z-index: 1;
+}
+#admin-header .logo{
+    margin: 0;
+}
+
+#admin-header .logo-img{
+    display: block;
+}
+#admin-header .logo-img img{
+    width: 100%;
+}
+
+#admin-header .dropdown{
+    text-align: right;
+}
+
+#admin-header .logout{
+    color: #fff;
+    background-color: #e93700;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 4px 15px;
+    margin: 5px 0;
+    border-radius: 10px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+#admin-header .logout:hover{
+    background-color: #333;
+    box-shadow: 0 0 5px #333;
+}
+
+/* admin wrapper css */
+/* ===================== */
+
+#admin-wrapper{
+    /* border: 1px solid #000; */
+    min-height: 700px;
+}
+
+
+/* admin menu css */
+/* ===================== */
+
+#admin-menu{
+    background-color: #e93700;
+    padding: 20px 10px;
+    min-height: 700px;
+}
+#admin-menu .menu-list li a{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.3s;
+}
+
+#admin-menu .menu-list li.active a,
+#admin-menu .menu-list li a:hover{
+    background-color: rgba(255,255,255,0.2);
+}
+
+/* admin content css */
+/* ====================== */
+
+#admin-content{
+    padding: 25px 20px 0;
+    min-height: 650px;
+}
+#admin-content .admin-content-container{
+    min-height: 645px;
+}
+
+#admin-content .admin-heading{
+    color: #333;
+    font-size: 30px;
+    margin: 0 0 20px;
+    text-transform: capitalize;
+    display: inline-block;
+}
+
+#admin-content .add-new{
+    color: #fff;
+    background-color: #e93700;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+#admin-content .add-new:hover{
+    background-color: #333;
+    box-shadow: 0 0 5px #333;
+}
+
+#admin-content .detail-box{
+    color: #fff;
+    background-color: #E93700;
+    width: 220px;
+    padding: 40px 20px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto 50px;
+    border: 5px solid #fff;
+    box-shadow: 5px 5px 0 rgba(0,0,0,0.1);
+}
+#admin-content .detail-box .count{
+    display: block;
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 40px;
+    margin: 0 0 7px;
+}
+
+#admin-content .detail-box .count-tag{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+/* ============================== */
+
+#admin-content .add-post-form{
+    /* border: 1px solid #000; */
+    margin: 0;
+}
+#admin-content .add-post-form .form-group.category,
+#admin-content .add-post-form .form-group.sub_category,
+#admin-content .add-post-form .form-group.brand{
+    display: inline-block;
+    width: 30%;
+    margin-right: 30px;
+}
+
+#admin-content .add-post-form .form-group.brand{
+    margin-right: 0;
+}
+
+#admin-content .add-post-form .form-control:focus{
+    box-shadow: 0 0 1px #333;
+    border-color: #999;
+}
+#admin-content .not-found{
+    padding: 10px 25px;
+    background-color: rgba(0,0,0,0.1);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+#admin-footer{
+    padding: 5px;
+    text-align: center;
+    margin: 0 -20px;
+    color: #fff;
+    background-color: #E93700;
+}
+
+.modal-body table{
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
+
+.modal-body table h3{
+    text-align: center;
+}
+
+
+/*===================*/
+/*PUBLIC VIEW CSS START*/
+
+/*----------------------------*\
+	Logo
+\*----------------------------*/
+
+#header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+#header .logo{
+    font-size: 30px;
+    margin: 0;
+}
+
+#header .logo-img{
+    display: block;
+}
+
+#header .logo-img img{
+    width: 100%;
+}
+
+#header .search{
+    margin: 0 auto;
+}
+
+#header .search .form-control{
+    border: none;
+    background-color: #f5f5f5;
+    padding: 22px 10px;
+    border-radius: 20px 0 0 20px;
+}
+#header .search .form-control:focus{
+    box-shadow: none;
+    border: none;
+}
+#header .search .btn{
+    color: #fff;
+    background-color: #df3500;
+    font-size: 20px;
+    padding: 8px 12px 7.5px;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    transition: all 0.3s ease;
+}
+#header .search .btn:hover{
+    box-shadow: 0 0 3px #333 inset;
+}
+
+#header .header-info{
+    padding:10px 0;
+    text-align: right;
+}
+
+#header .header-info li{
+    display:inline-block;
+    margin-right:15px;
+}
+#header .header-info li:last-child{
+    margin:0;
+}
+#header .header-info li a{
+    font-size:16px;
+    color:#666;
+    text-transform: capitalize;
+    border-radius: 10px;
+    position: relative;
+    transition: all 0.3s;
+}
+#header .header-info li a i{
+    font-size: 20px;
+}
+#header .header-info li a:hover{
+    color: #df3500;
+}
+
+#header .header-info li a span{
+    color: #fff;
+    background-color: #DF3500;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 18px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    position: absolute;
+    top: -12px;
+    right: 0;
+}
+
+#header .header-info li i.fa{
+    margin:0 5px;
+}
+
+/*header menu CSS*/
+/*=============================*/
+
+#header-menu .menu-list{
+    background-color: #df3500;
+    padding: 8px 15px;
+    margin: 0 -15px;
+    text-align: center;
+}
+#header-menu .menu-list li {
+    display: inline-block;
+}
+#header-menu .menu-list li a{
+    color: #fff;
+    background-color: rgba(255,255,255,0.1);
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 8px 15px;
+    margin: 0 15px 0 0;
+    border-radius: 10px;
+    display: block;
+    transition: all 0.3s;
+}
+
+#header-menu .menu-list li a:hover{
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+/* Customer-login form css */
+/* ==================================== */
+
+.modal-body{
+    padding:50px 50px;
+    background: linear-gradient(30deg,#e9e9e9 49%, #e4e4e4 50%);
+    box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
+}
+
+.customer_login{
+    text-align: center;
+}
+.customer_login h2{
+    font-size: 35px;
+    font-weight:700;
+    color:#444;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+
+.customer_login label{
+    width: 25%;
+    display: inline-block;
+}
+.customer_login .form-control{
+    width: 74%;
+    display: inline-block;
+    border: none;
+    padding: 15px 15px;
+    height: 50px;
+    border-radius: 20px;
+}
+.customer_login .form-control:focus{
+    border: none;
+    box-shadow: 3px 3px 5px #999;
+}
+.customer_login .form-control::placeholder{
+    color: #999;
+    text-transform: capitalize;
+}
+
+.customer_login .btn{
+    width:50%;
+    padding: 7px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #e93700;
+    border-radius:20px;
+    margin: 0 0 20px;
+    transition:all 0.3s;
+}
+
+.customer_login .btn:hover,
+.customer_login .btn:focus{
+    background-color: #333;
+}
+
+.customer_login span{
+    display: block;
+    color: #000;
+}
+.customer_login span a{
+    color: #e93700;
+    transition: all 0.3s ease 0s;
+}
+.customer_login span a:hover{
+    color: #000;
+}
+/*----------------------------*\
+	/Customer-login form css
+\*----------------------------*/
+
+
+
+/* Register form css */
+/* ==================================== */
+
+.signup_form{
+    text-align:center;
+    padding:30px 30px;
+    background: linear-gradient(30deg,#e9e9e9 49%, #e4e4e4 50%);
+    box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);
+}
+
+.signup_form h2{
+    font-size: 35px;
+    font-weight:700;
+    color:#444;
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+}
+
+.signup_form label{
+    width: 25%;
+    text-align: left;
+    display: inline-block;
+}
+.signup_form .form-control{
+    width: 74%;
+    display: inline-block;
+    border: none;
+    padding: 15px 15px;
+    height: 50px;
+    border-radius: 20px;
+}
+.signup_form .form-control:focus{
+    border: none;
+    box-shadow: 3px 3px 5px #999;
+}
+.signup_form .form-control::placeholder{
+    color: #999;
+    text-transform: capitalize;
+}
+
+.signup_form .btn{
+    width:50%;
+    padding: 7px 15px;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #fff;
+    background-color: #e93700;
+    border-radius:20px;
+    transition:all 0.3s;
+}
+
+.signup_form .btn:hover,
+.signup_form .btn:focus{
+    background-color: #333;
+}
+
+/*----------------------------*\
+	/Register form css
+\*----------------------------*/
+
+/*----------------------------*\
+	Banner
+\*----------------------------*/
+
+#banner{
+    color: #fff;
+}
+
+
+
+#banner .banner-content{
+    margin: 0 -15px;
+    height: 400px;
+    overflow: hidden;
+}
+
+
+/*----------------------------*\
+	/Banner
+\*----------------------------*/
+
+
+/*----------------------------*\
+	Products Section
+\*----------------------------*/
+
+.product-section{
+    padding: 30px 0;
+}
+
+.product-section.content{
+    min-height: 700px;
+}
+
+.product-section.popular-products{
+    background-color: rgba(0,0,0,0.02);
+}
+
+.section-head{
+    text-align: center;
+    color: #444;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: capitalize;
+    margin: 0 0 30px;
+}
+
+.section-head:after{
+    content: '';
+    display: block;
+    clear: both;
+    width: 150px;
+    height: 2px;
+    border-top: 2px dashed #e7e7e7;
+    margin: 10px auto 0;
+}
+
+.product-section .product-grid{
+    text-align: center;
+    margin: 0 15px 30px;
+}
+.product-section .product-grid.popular{
+    margin: 0;
+}
+
+.product-grid .product-image{
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 260px;
+}
+.product-grid .product-image.latest{
+    height: 330px;
+}
+.product-grid .product-image.popular{
+    height: 250px;
+}
+
+.product-grid .product-image a.image{ display: block; }
+
+.product-grid .product-image img{
+    width: auto;
+    height: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.owl-carousel .owl-theme img{
+    width: auto !important;
+}
+
+.product-grid .product-button-group{
+    font-size: 0;
+    width: 140px;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+.product-grid .product-button-group a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: capitalize;
+    margin: 0 4px;
+    border-radius: 50%;
+    color: #df3500;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    transform: scale(0);
+    transition: all 0.3s;
+}
+.product-grid .product-button-group a:hover{
+    color: #fff;
+    background-color: #df3500;
+    text-shadow: 0 0 2px #333;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5) inset;
+}
+.product-grid:hover .product-button-group a{
+    transform: scale(1);
+}
+
+.product-grid .product-content {
+    padding: 12px;
+}
+
+.product-grid .title{
+    font-size: 14px;
+    font-weight: 600;
+    display: block;
+    margin: 0 0 5px;
+    text-transform: capitalize;
+}
+
+.product-grid .title a {
+    color: #555;
+}
+.product-grid .title a:hover {
+    color:#df3500;
+}
+
+.product-grid .price {
+    font-size:16px;
+    color: #555;
+    font-weight: 500;
+    margin: 0 2px;
+}
+
+
+/*----------------------------*\
+	/Products
+\*----------------------------*/
+
+/*----------------------------*\
+	Product Page
+\*----------------------------*/
+
+
+
+.product-details{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-details h3{
+    font-size: 25px;
+    color: #2B2D42;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0 0 10px;
+}
+
+.product-details .product-price {
+    display:block;
+    font-size: 24px;
+    font-weight: 700;
+    color: #D10024;
+    display: inline-block;
+    margin:0 15px 10px 0;
+}
+
+.product-details .product-price span{
+    color: #8e8e8e;
+    margin-right: 5px;
+    font-size: 20px;
+    font-weight:400;
+    text-decoration: line-through;
+}
+
+.product-details .product-available {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #D10024;
+}
+
+.product-details .description{
+    font-size: 15px;
+    font-weight:400;
+    color: #333;
+    margin:0 0 20px 0;
+}
+
+.product-details .qut-label{
+    display:inline-block;
+    margin-right: 30px;
+}
+
+.product-details .qut-label span{
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-right: 15px;
+    margin-bottom: 0px;
+}
+
+.product-details .product-btn{
+    border:2px solid transparent;
+    padding:12px 30px;
+    color:#fff;
+    background:#ef233c;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 40px;
+    position: relative;
+    transition: 0.2s all;
+}
+
+.product-details .product-btn:hover{
+    background-color: #fff;
+    color: #D10024;
+    border-color: #D10024;
+}
+.product-details .product-link li a{
+    color:#D10024;
+}
+
+/*----------------------------*\
+   /Product Page
+\*----------------------------*/
+
+/*----------------------------*\
+   /Single Product Page Start
+\*----------------------------*/
+
+.single-product-container{
+    padding: 25px 0;
+    min-height: 700px;
+}
+.single-product-container .product-image{
+    text-align: center;
+
+}
+.single-product-container .product-image img{
+    width: 100%;
+}
+.single-product-container .product-content{
+}
+.single-product-container .product-content .title{
+    font-size: 25px;
+    margin: 0 0 10px;
+}
+.single-product-container .product-content .price{
+    font-size: 23px;
+    margin: 0 0 5px;
+}
+.single-product-container .product-content .description{
+    font-size: 15px;
+    margin: 0 0 20px;
+    letter-spacing: 0.5px;
+}
+.single-product-container .product-content a{
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 10px 0 0;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #df3500;
+    padding: 7px 15px;
+    display: inline-block;
+    border: 3px solid #df3500;
+    border-radius: 20px;
+    transition: all 0.3s;
+}
+
+.single-product-container .product-content a:hover{
+    background-color: #fff;
+    color: #df3500;
+}
+
+/*----------------------------*/
+   /*Single Product Page End*/
+/*----------------------------*/
+
+/*----------------------------*/
+   /* Cart And Wishlist Page CSS Start */
+/*----------------------------*/
+
+.product-cart-container,
+.product-wishlist-container{
+    padding: 20px 0;
+    min-height: 750px;
+}
+
+
+.empty-result{
+    font-size: 16px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgba(0,0,0,0.05);
+    border-radius: 20px;
+}
+
+/*----------------------------*/
+/* Cart And Wishlist Page CSS Start */
+/*----------------------------*/
+
+
+/*----------------------------*/
+/* Left Sidebar CSS Start */
+/*----------------------------*/
+
+.left-sidebar{
+    border: 1px solid rgba(0,0,0,0.1);
+    padding: 15px;
+}
+
+.left-sidebar h3{
+    font-size: 18px;
+    padding: 0 0 7px;
+    margin: 0 0 10px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.left-sidebar ul li a{
+    color: #999;
+    font-size: 15px;
+    margin: 0 0 5px;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+.left-sidebar ul li a:hover{
+    color: #555;
+}
+
+/*----------------------------*/
+/* Left Sidebar CSS End */
+/*----------------------------*/
+
+
+/* user-profile form css */
+/* ==================================== */
+
+#user_profile-content {
+    padding: 40px 0;
+    min-height: 700px;
+}
+
+
+#user_profile-content table{
+    width:100%;
+    background:#f3f3f3;
+    padding:20px 20px;
+    border-radius:10px 10px;
+    margin:0 0 30px;
+}
+
+#user_profile-content .modify-btn{
+    color: #fff;
+    background-color: #DF3500;
+    display: inline-block;
+}
+
+
+
+/*----------------------------*\
+   /user-profile Page End
+\*----------------------------*/
+
+/*----------------------------*\
+	Pagination CSS Start
+\*----------------------------*/
+.pagination-outer{ text-align: center; }
+.pagination{
+    display: inline-flex;
+}
+.pagination li a.page-link{
+    color: #fff;
+    background-color: #2C3A47;
+    font-size: 18px;
+    font-weight: 500;
+    margin: 0 5px;
+    border-radius: 0;
+    border: none;
+    display: block;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+.pagination li.active a.page-link,
+.pagination li a.page-link:hover,
+.pagination li.active a.page-link:hover{
+    color: #fff;
+    background-color: #2C3A47;
+    text-shadow: 0 0 3px #2C3A47;
+}
+.pagination li a.page-link:before{
+    content: '';
+    background-color: #DF3500;
+    height: 150%;
+    width: 120%;
+    position: absolute;
+    left: -10%;
+    top: -150%;
+    z-index: -1;
+    transition: all 0.3s ease 0s;
+    clip-path: polygon(0 0, 50% 100%, 100% 0);
+}
+.pagination li.active a.page-link:before,
+.pagination li a.page-link:hover:before{
+    top: 0;
+}
+/*----------------------------*\
+	Pagination CSS End
+\*----------------------------*/
+
+/*----------------------------*\
+    Breadcrumb CSS 
+\*----------------------------*/
+.breadcrumb{
+    background-color: transparent;
+    padding: 0;
+}
+
+.breadcrumb li{
+    font-size: 16px;
+}
+
+.breadcrumb li a{
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.breadcrumb li a:hover{
+    color: #DF3500;
+}
+
+/*----------------------------*\
+	Footer
+\*----------------------------*/
+#footer{
+    color: #fff;
+    background-color: #df3500;
+    padding: 30px 0 0;
+}
+
+#footer h3{
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 10px;
+}
+#footer h3:after{
+    content: '';
+    display: block;
+    clear: both;
+    background-color: #fff;
+    height: 2px;
+    width: 100px;
+    margin: 10px 0 0;
+}
+
+#footer p{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+#footer a{
+    color: #fff;
+}
+#footer .menu-list{
+    margin: 0 0 20px;
+}
+#footer .menu-list li{
+    margin: 0 0 5px;
+}
+
+#footer .menu-list li a{
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #fff;
+    display: inline-block;
+    transition: all 0.3s;
+}
+
+#footer .menu-list li i{
+    display: inline-block;
+    width: 15px;
+    font-size: 18px;
+    margin: 0 10px 0 0;
+    vertical-align: top;
+}
+#footer .menu-list li span{
+    display: inline-block;
+    text-transform: capitalize;
+    letter-spacing: 0.5px;
+    text-align: left;
+    padding: 0;
+    width: calc(100% - 30px);
+    margin: 0 0 5px;
+}
+
+#footer .menu-list li a:hover{
+    text-shadow: 0 0 5px #000;
+}
+
+#footer span{
+    text-align: center;
+    display: block;
+    padding: 10px 0;
+}
+
+
+/*----------------------------*\
+	/Footer
+\*----------------------------*/
+input.toggle-checkbox{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background-color: transparent;
+    border-radius: 10px;
+    height: 14px;
+    width: 25px;
+    border: 1px solid #999;
+    vertical-align: -2px;
+    margin: 0 3px 0 0;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+            
+}
+
+input.toggle-checkbox:focus{
+    outline: none;
+}
+
+input.toggle-checkbox:checked{
+    background-color: green;
+}
+
+
+input.toggle-checkbox:before{
+    content: '';
+    transform: rotate(-45deg);
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: all 0.3s ease;
+    opacity: 1;
+    border: none;
+    background-color: green;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 1px;
+    left: 1px;
+    transform: translateX(0) translateY(0) rotate(0);
+}
+
+input.toggle-checkbox:checked:before{
+    background-color: #fff;
+    left: 11px;
+}
+
+
+/*payment success page css*/
+
+.payment-response{
+    padding: 50px 0;
+    text-align: center;
+}
+.payment-response .panel i{
+    font-size: 100px;
+    display: block;
+    margin: 0 0 20px;
+}
